@@ -1,0 +1,35 @@
+{
+  "name": "ecs",
+  "version": "1.0.0",
+  "description": "Demo of ECS system using es6 features",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "build": "babel-node index.js",
+    "watch": "watchify -t [babelify --blacklist regenerator] -o public/ecs.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stevekane/ecs.git"
+  },
+  "keywords": [
+    "entity",
+    "component",
+    "system"
+  ],
+  "author": "Steve Kane <kanesteven@gmail.com> (github.com/stevekane)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevekane/ecs/issues"
+  },
+  "homepage": "https://github.com/stevekane/ecs#readme",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "node-uuid": "^1.4.3",
+    "p2": "^0.7.0",
+    "pixi.js": "^3.0.7"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.3"
+  }
+}
